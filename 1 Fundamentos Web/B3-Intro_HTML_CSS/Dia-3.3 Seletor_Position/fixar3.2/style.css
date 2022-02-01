@@ -1,0 +1,45 @@
+h1 {
+    width: 300px;
+    text-align: center;
+}
+
+div {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+div:hover {
+    border-style: double;
+    border-color: silver;
+}
+
+#prim {
+    background-color: cyan;
+    color: magenta;
+    font-style: italic;
+}
+
+#sec {
+    background-color: blue;
+    color: red;
+}
+
+#comp {
+    background-color: purple;
+    color: yellow;
+    font-style: italic;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#esc {
+    background-color: black;
+    color: white;
+}
+
+#cla {
+    background-color: white;
+    color: black;
+    font-style: italic;
+}
