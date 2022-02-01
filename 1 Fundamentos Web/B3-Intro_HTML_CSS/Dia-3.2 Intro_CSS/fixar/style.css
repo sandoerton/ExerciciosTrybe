@@ -1,0 +1,48 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+body {
+    font-size: 16px;
+}
+
+li {
+    display: block;
+    line-height: 30px;
+    color: whitesmoke;
+    font-style: bold;
+    text-align: center;
+    width: 450px;
+}
+
+#ama {
+    background-color: yellow;
+}
+
+#verm {
+    background-color: red;
+}
+
+#mar {
+    background-color: brown;
+}
+
+.gray{
+    background-color: gray;
+    width: 550px;
+    text-align: center;
+}
+
+.animation :hover {
+    box-sizing: border-box;
+    line-height: 75px;
+    text-decoration: underline;
+    color: blue;
+}
