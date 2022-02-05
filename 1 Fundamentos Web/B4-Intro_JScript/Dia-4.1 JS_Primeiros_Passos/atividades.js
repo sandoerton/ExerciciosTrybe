@@ -74,5 +74,34 @@ if (b > 0) {
 
 //Ativ 5
 
+/*
+const a = (Math.floor(Math.random()*100)+1);
+const b = (Math.floor(Math.random()*100)+1);
+let c;
+
+console.log('O angulo A do triângulo vale: ', a);
+console.log('O angulo B do triângulo vale: ', b);
+
+if (a + b < 180) {
+    c = 180 - (a + b);
+} else {
+    c = (Math.floor(Math.random()*60)+1);
+}
+
+console.log('O angulo C do triângulo vale: ', c);
+
+if (a + b + c > 180 || a + b + c < 180) {
+    console.log('Estes valores, não formam um triângulo');
+} else if (a == b && b == c) {
+    console.log('Este é um triângulo equilátero');
+} else if (a == 90 || b == 90 || c == 90) {
+    console.log('Este é um triângulo retangulo');
+} else {
+    console.log('Este é um triângulo escaleno');
+}
+*/
+
+//Ativ 6
+
 
 
