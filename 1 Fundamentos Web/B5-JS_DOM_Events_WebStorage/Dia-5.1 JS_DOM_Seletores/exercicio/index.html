@@ -21,7 +21,7 @@
                 border-style: solid;
             }
 
-            .title {
+            #title {
                 text-align: center;
             }
 
@@ -43,7 +43,7 @@
 
 <body>
     <header>
-        <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+        <h1 id="title">Exercício 5.1 - JavaEscripito </h1>
     </header>
     <main class="main-content">
         <section class="center-content">
@@ -65,6 +65,47 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+
+        //Exerc1
+        function changeText() {
+            let texto = document.getElementsByTagName('p')[1];
+            texto.innerText = 'Estar trabalhando remotamente com salário maior q 4K.';
+        }
+        changeText();
+
+        //Exerc2e3
+        // let quadAzul = document.getElementsByClassName('main-content')[0];
+        // quadAzul.style.backgroundColor = 'blue';
+
+        function changeColor(elementos, ind, cor) {
+            let mudaCor = document.getElementsByClassName(elementos)[ind];
+            mudaCor.style.backgroundColor = cor;
+        }
+        changeColor('main-content', '0', 'rgb(76,164,109)');
+        changeColor('center-content', '0', 'white');
+
+        function h1Correction() {
+            let h1New = document.getElementById('title');
+            h1New.innerText = 'Exercício 5.1 - JavaScript';
+        }
+        h1Correction();
+
+        function maiusc() {
+            let parags = document.getElementsByTagName('p');
+            for (let i = 0; i < parags.length; i++) {
+                parags[i].innerHTML = parags[i].innerHTML.toUpperCase();
+            }
+        }
+        maiusc();
+
+         function consLog() {
+         let imprime = document.getElementsByTagName('p');
+         for (let i = 0; i < imprime.length; i++) {
+                 console.log(imprime[i].innerText);
+         }
+         consLog();
+         }
+
     </script>
 </body>
 
