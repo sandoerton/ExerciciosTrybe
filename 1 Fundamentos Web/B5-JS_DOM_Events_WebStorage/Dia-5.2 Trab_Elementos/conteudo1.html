@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo 5.2</title>
+</head>
+
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+            <section id="primeiroFilho"></section>
+            <section id="elementoOndeVoceEsta">
+                <section id="primeiroFilhoDoFilho"></section>
+                <section id="segundoEUltimoFilhoDoFilho"></section>
+            </section>
+            Atenção!
+            <section id="terceiroFilho"></section>
+            <section id="quartoEUltimoFilho"></section>
+        </section>
+    </main>
+    <script>
+        let aki = document.getElementById('elementoOndeVoceEsta');
+        aki.parentNode.style.color = 'red';
+        let neto1 = document.getElementById('primeiroFilhoDoFilho');
+        neto1.innerText = 'Estou trabalhando bastante e pegado com Elementos.';
+        let pai = document.getElementById('pai');
+        pai.firstElementChild;
+        aki.previousElementSibling;
+        aki.nextSibling;
+        aki.nextElementSibling;
+        pai.lastElementChild.previousElementSibling;
+
+        let newIrmaoAki = document.createElement('section');
+        pai.appendChild(newIrmaoAki);
+
+        let newFilhoAki = document.createElement('section');
+        aki.appendChild(newFilhoAki);
+
+        let bisNeto = document.createElement('section');
+        neto1.appendChild(bisNeto);
+
+        bisNeto.parentNode.parentNode.nextElementSibling;
+
+        aki.removeChild(segundoEUltimoFilhoDoFilho);
+        pai.removeChild(primeiroFilho);
+        pai.removeChild(terceiroFilho);
+        pai.removeChild(quartoEUltimoFilho);
+        neto1.removeChild(bisNeto);
+        aki.removeChild(newFilhoAki);
+        pai.removeChild(newIrmaoAki);
+
+    </script>
+</body>
+
+</html>
