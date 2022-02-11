@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conteudo 1</title>
+</head>
+<body>
+    <header>
+        <h2 id="page-title">Título</h2>
+        <p id="paragraph" class="pargf">Dê uma cor para este parágrafo!</p>
+        <h4 id="subtitle">Subtítulo</h4>
+        <p id="second-paragraph" class="pargf">Segundo parágrafo!</p>
+      </header>
+      <script>
+        const paragraph = document.getElementById("paragraph");
+        paragraph.style.color = "red";
+        
+        let changeTitulo = document.getElementById('page-title');
+        changeTitulo.innerText = 'Velozes e Furiosos';
+
+        let chSubTit = document.getElementById('subtitle');
+        chSubTit.style.color = 'blue';
+        chSubTit.innerText = 'Panico';
+
+        let parag2 = document.getElementById('second-paragraph');
+        parag2.innerHTML = parag2.innerHTML.toUpperCase();
+
+        let cPargf = document.getElementsByClassName('pargf')[0];
+        cPargf.style.color = 'blue';
+
+        let subTi = document.getElementsByTagName('h4')[0];
+        subTi.style.color = 'yellow';
+
+      </script>
+</body>
+</html>
