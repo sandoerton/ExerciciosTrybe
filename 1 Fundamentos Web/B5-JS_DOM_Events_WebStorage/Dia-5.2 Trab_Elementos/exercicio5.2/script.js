@@ -41,11 +41,18 @@ for (let i = 0; i < lista.length; i += 1) {
 }
 sec_R.appendChild(ulSecRig);
 
-//let h3Nomes = ['h3n1', 'h3n2', 'h3n3'];
+let h3Nomes = ['h3n1', 'h3n2', 'h3n3'];
 for (let i = 0; i < 3; i += 1) {
-    //let nomeh3 = h3Nomes[i];
+    let nomeh3 = h3Nomes[i];
     let newh3 = document.createElement('h3');
+    newh3.innerText = nomeh3;
+    newh3.className = 'description';
     mainEx.appendChild(newh3);
 }
 
-
+h1Ex.className = 'title';
+mainEx.removeChild(sec_L);
+sec_R.style.marginRight = 'auto';
+mainEx.style.backgroundColor = 'green';
+ulSecRig.lastElementChild.previousElementSibling.remove();
+ulSecRig.lastElementChild.remove();
