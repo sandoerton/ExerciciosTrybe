@@ -128,3 +128,30 @@ console.log(numbers);*/
 // }
 
 // medirPalavra('Seja o que quiser ser');
+
+
+
+//Exerc 4.1
+
+const string = 'Tryber x aqui!';
+const nome = 'Sandoerton';
+let newString = '';
+const skills = ['HTML', 'CSS', 'JS'];
+
+const concat = (strg1, strg2) => {
+    newString = strg1.replace('x', strg2);
+    return newString;
+}
+
+const strSkills = () => {
+    concat(string, nome);
+    const orderSkills = skills.sort();
+    console.log(`${newString}
+    Minhas principais habilidades são:
+    ${orderSkills}
+    #goTrybe...`);
+}
+
+// console.log(concat(string, nome));
+
+strSkills();
