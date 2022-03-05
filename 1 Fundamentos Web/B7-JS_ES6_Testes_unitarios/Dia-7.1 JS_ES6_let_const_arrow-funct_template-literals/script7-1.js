@@ -110,3 +110,9 @@ console.log(numbers);*/
 
 // console.log(fatorialNumber(5));
 
+//Exerc1 Opção2
+
+// let fatorialNumber = num => ((num > 0) ? num * fatorialNumber(num - 1) : (1));
+
+// console.log(fatorialNumber(5));
+
