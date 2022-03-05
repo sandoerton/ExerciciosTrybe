@@ -116,3 +116,15 @@ console.log(numbers);*/
 
 // console.log(fatorialNumber(5));
 
+//Exerc2
+
+// const medirPalavra = frase => {
+//     let palavras = frase.split(' ');
+//     let palavraMaior = '';
+//     for (let i = 0; i < palavras.length; i += 1) {
+//         ((palavras[i].length >= palavraMaior.length) ? (palavraMaior = palavras[i]) : false);
+//     }
+//     console.log(palavraMaior);
+// }
+
+// medirPalavra('Seja o que quiser ser');
