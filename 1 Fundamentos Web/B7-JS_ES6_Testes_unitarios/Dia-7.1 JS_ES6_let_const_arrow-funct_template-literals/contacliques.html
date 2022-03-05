@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta Cliques</title>
+</head>
+<body>
+    <button id="clic">Clique aki!...</button>
+</body>
+<script>
+    const clickButton = document.getElementById('clic');
+    let cliques = 0;
+    const clickCount = event => {
+        event.preventDefault();
+        cliques +=1;
+        clickButton.innerHTML = `Já recebi ${cliques} clique(s). Clique novamente.`;
+    }
+
+    clickButton.addEventListener('click', clickCount);
+</script>
+</html>
